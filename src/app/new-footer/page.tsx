@@ -67,16 +67,16 @@ const Footer: React.FC = () => {
             <div className="mt-10  bg-purple-100 pt-4 flex flex-col md:flex-row px-24 pb-4  justify-between items-center">
                 <p className="text-sm text-gray-600">©Webecy - All Rights Reserved</p>
                 <div className="flex space-x-4 mt-4 md:mt-0">
-                    <div className="bg-blue-800 text-white p-2 rounded-full cursor-pointer hover:bg-purple-600">
+                    <div className="bg-purple-900 text-white p-2 rounded-full cursor-pointer hover:bg-pink-500">
                         <FaFacebookF />
                     </div>
 
-                    <div className="bg-blue-800 text-white p-2 rounded-full cursor-pointer hover:bg-purple-600">
+                    <div className="bg-purple-900 text-white p-2 rounded-full cursor-pointer hover:bg-pink-500">
                         <FaInstagram />
 
 
                     </div>
-                    <div className="bg-blue-800 text-white p-2 rounded-full cursor-pointer hover:bg-purple-600">
+                    <div className="bg-purple-900 text-white p-2 rounded-full cursor-pointer hover:bg-pink-500">
                         <FaTwitter />
                     </div>
                 </div>
