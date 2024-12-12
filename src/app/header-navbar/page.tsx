@@ -18,14 +18,24 @@ const Navbar: React.FC = () => {
     setIsOpen(false); // Close the menu on mobile
   };
 
+  const navItems = [
+    { name: "Home", link: "/pages/hero" },
+    { name: "Pages", link: "/pages" },
+    { name: "Products", link: "/pages/products" },
+    { name: "Blog", link: "/pages/blog" },
+    { name: "Shop", link: "/shop" },
+    { name: "Contact", link: "/pages/contacts" },
+  ];
+
   return (
     <header className="bg-white text-white">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-black"> <Link href="#" className="hover:text-pink-500">
-
-
-          Hekto </Link></h1>
+        <h1 className="text-2xl font-bold text-black">
+          <Link href="/" className="hover:text-pink-500">
+            Hekto
+          </Link>
+        </h1>
 
         {/* Search Bar for Mobile */}
         <div className="flex md:hidden ml-14 items-center space-x-2">
@@ -41,26 +51,20 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex space-x-8">
-          {[
-            { name: "Home", link: "home" },
-            { name: "Pages", link: "pages" },
-            { name: "Products", link: "products" },
-            { name: "Blog", link: "blog" },
-            { name: "Shop", link: "shop" },
-            { name: "Contact", link: "contact" },
-          ].map((navItem) => (
-            <a
+          {navItems.map((navItem) => (
+            <Link
               key={navItem.link}
-              href="#"
-              className={`text-black hover:text-pink-300 ${activeLink === navItem.link ? "text-pink-500" : ""
-                }`}
+              href={navItem.link}
+              className={`text-black hover:text-pink-300 ${
+                activeLink === navItem.link ? "text-pink-500" : ""
+              }`}
               onClick={() => handleLinkClick(navItem.link)}
             >
               {navItem.name}
               {activeLink === navItem.link && (
                 <IoIosArrowDown className="inline-block ml-1" />
               )}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -101,22 +105,15 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden absolute top-0 left-0 right-0 bg-purple-300 text-white z-50 transition-all transform translate-y-full">
           <nav className="flex flex-col ml-6 py-1">
-            {[
-              { name: "Home", link: "home" },
-              { name: "Pages", link: "pages" },
-              { name: "Products", link: "products" },
-              { name: "Blog", link: "blog" },
-              { name: "Shop", link: "shop" },
-              { name: "Contact", link: "contact" },
-            ].map((navItem) => (
-              <a
+            {navItems.map((navItem) => (
+              <Link
                 key={navItem.link}
-                href="#"
+                href={navItem.link}
                 className="text-black hover:text-pink-300"
                 onClick={() => handleLinkClick(navItem.link)}
               >
                 {navItem.name}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
