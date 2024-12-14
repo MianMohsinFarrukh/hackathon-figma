@@ -11,7 +11,7 @@ export default function Singleblog() {
                     { name: "Pages", path: "/pages" },
                     { name: "Single Blog", active: true },
                 ]}
-                titleStyle="text-black"
+                titleStyle="text-purple-900 "
                 breadcrumbStyle="text-gray-500"
             />
             </div>

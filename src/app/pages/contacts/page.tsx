@@ -12,16 +12,17 @@ export default function Contactpage() {
                         { name: "Pages", path: "/pages" },
                         { name: "Contact Us", active: true },
                     ]}
+                    titleStyle='text-purple-900 '
                 />
             </div>
 
-            <div className=" py-12 mt-10 mb-10">
+            <div className=" py-12 mt-8 mb-10">
       <div className="container mx-auto px-6 md:px-12">
         {/* Information & Contact Way */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Information About Us */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl font-bold text-purple-900  mb-4">
               Information About Us
             </h2>
             <p className="text-gray-500 mb-6">
@@ -38,7 +39,7 @@ export default function Contactpage() {
 
           {/* Contact Way */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl font-bold text-purple-900  mb-4">
               Contact Way
             </h2>
             <ul className="text-gray-500 space-y-4">
@@ -60,7 +61,7 @@ export default function Contactpage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 items-center">
           {/* Form Section */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl font-bold text-purple-900  mb-4">
               Get In Touch
             </h2>
             <p className="text-gray-500 mb-6">
@@ -100,7 +101,7 @@ export default function Contactpage() {
           {/* Illustration Section */}
           <div className="flex justify-center">
             <img
-              src="/images/contact-illustration.png"
+              src="/imges/grp.png"
               alt="Contact Illustration"
               className="max-w-full h-auto"
             />

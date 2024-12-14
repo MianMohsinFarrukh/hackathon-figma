@@ -15,7 +15,7 @@ export default function Herotopbar({
 }: HeroTopbarProps) {
   return (
     <div className="bg-purple-100 py-8">
-      <div className="container mx-auto text-center md:text-left mb-12 mt-3 px-4 md:px-12">
+      <div className="container mx-auto text-center md:text-left mb-12 mt-3 px-4 md:px-14">
         <h2 className={`text-2xl md:text-4xl font-bold mb-4 ${titleStyle}`}>
           {title}
         </h2>
