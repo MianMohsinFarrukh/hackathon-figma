@@ -23,30 +23,30 @@ export default function Productdetails() {
           {/* Product Overview */}
           <div className=" bg-white p-4 rounded-lg shadow-sm  grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
             {/* Product Images */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3">
             
-              <div className="grid grid-rows-2 gap-4">
+              <div className="grid grid-rows- pl-4 gap-4">
                 <img
                   src="/imges/pic1.png"
                   alt="Product 1"
-                  className="w-60 h-20 rounded-lg"
+                  className="w-full h-20 auto rounded-lg"
                 />
                 <img
                   src="/imges/pic2.png"
                   alt="Product 2"
-                  className="w-60 h-20 rounded-lg"
+                  className="w-full  h-20 auto rounded-lg"
                 />
                  <img
                   src="/imges/pic3.png"
                   alt="Product 3"
-                  className="w-60 h-20 rounded-lg"
+                  className="w-full  h-20 auto rounded-lg"
                 />
                 
               </div>
               <img
                 src="/imges/pic4.png"
                 alt="Main Product"
-                className="w-full h-full rounded-lg"
+                className="w-auto h-full rounded-lg"
               />
             </div>
 
@@ -136,22 +136,22 @@ export default function Productdetails() {
                 {
                   name: "Men's Fashion Wear",
                   price: "$150.00",
-                  img: "/images/related-1.jpg",
+                  img: "/imges/pr1.png",
                 },
                 {
                   name: "Women's Fashion",
                   price: "$120.00",
-                  img: "/images/related-2.jpg",
+                  img: "/imges/pr2.png",
                 },
                 {
                   name: "White Dummy Fashion",
                   price: "$99.00",
-                  img: "/images/related-3.jpg",
+                  img: "/imges/pr3.png",
                 },
                 {
                   name: "The Red Digital Clock",
                   price: "$80.00",
-                  img: "/images/related-4.jpg",
+                  img: "/imges/pr4.png",
                 },
               ].map((product, index) => (
                 <div

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
@@ -50,10 +51,10 @@ const TopBar: React.FC = () => {
           </option>
         </select>
         <span className="text-sm flex items-center cursor-pointer hover:text-gray-300 mt-2 sm:mt-0">
-          Login <AiOutlineUser className="ml-1" />
+         <Link href="/pages/loginpage">Login</Link>  <AiOutlineUser className="ml-1" />
         </span>
         <span className="text-sm flex items-center cursor-pointer hover:text-gray-300 mt-2 sm:mt-0">
-          Wishlist <IoHeartOutline className="ml-1" />
+        <Link href="/pages/wishlist-shoplist">Wishlist</Link>  <IoHeartOutline className="ml-1" />
         </span>
         <span className="text-xl cursor-pointer hover:bg-purple-900 p-1 rounded-full mt-2 sm:mt-0">
           <MdOutlineShoppingCart />
