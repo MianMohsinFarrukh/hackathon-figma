@@ -2,7 +2,7 @@ import Herotopbar from "@/app/components/hero-top-bar/page";
 import React from "react";
 import { CiHeart, CiZoomIn } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import Image from "next/image";
+import Endimg from "@/app/components/endimg/page";
 const products = [
   {
     id: 1,
@@ -241,7 +241,8 @@ export default function Shoplist() {
       </div>
       <div>
 
-      <Image className=" mt-10 mb-14 w-full px-24" width={200} height={400} src="/imges/ema.png" alt='image'></Image>
+      
+      <Endimg/>
       </div>
     </div>
   );

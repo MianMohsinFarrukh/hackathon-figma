@@ -24,7 +24,7 @@ export default function Productdetails() {
           <div className=" bg-white p-4 rounded-lg shadow-sm  grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
             {/* Product Images */}
             <div className="grid grid-cols-2 gap-3">
-            
+
               <div className="grid grid-rows- pl-4 gap-4">
                 <img
                   src="/imges/pic1.png"
@@ -36,12 +36,12 @@ export default function Productdetails() {
                   alt="Product 2"
                   className="w-full  h-20 auto rounded-lg"
                 />
-                 <img
+                <img
                   src="/imges/pic3.png"
                   alt="Product 3"
                   className="w-full  h-20 auto rounded-lg"
                 />
-                
+
               </div>
               <img
                 src="/imges/pic4.png"
@@ -167,15 +167,15 @@ export default function Productdetails() {
                   <p className="text-pink-500 font-semibold">{product.price}</p>
                 </div>
               ))}
-             
+
             </div>
           </div>
         </div>
       </div>
       <div className="">
-<Image className=" mt-10 mb-14 w-full px-24" width={200} height={400} src="/imges/ema.png" alt='image'></Image>
-</div>
+        <Image className=" mt-10 mb-14 w-full px-24" width={200} height={400} src="/imges/ema.png" alt='image'></Image>
+      </div>
     </div>
-    
+
   );
 }

@@ -1,6 +1,6 @@
 import Herotopbar from '@/app/components/hero-top-bar/page'
 import React from 'react'
-import Image from 'next/image'
+import Endimg from '@/app/components/endimg/page'
 export default function loginpage() {
     return (
         <div>
@@ -65,7 +65,7 @@ export default function loginpage() {
                 </div>
             </div>
 
-            <Image className=" mt-10 mb-14 w-full px-24" width={200} height={400} src="/imges/ema.png" alt='image'></Image>
+            <Endimg />
 
 
         </div>
