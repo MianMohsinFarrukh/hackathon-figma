@@ -12,7 +12,7 @@ import LatestBlog from '@/app/components/hero-s9/page'
 
 export default function Heros() {
   return (
-    <div>
+    <div >
       <HeroSlider />
       <Sectiontwo />
       <Sectionthree />

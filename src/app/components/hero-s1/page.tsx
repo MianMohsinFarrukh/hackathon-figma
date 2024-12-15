@@ -22,7 +22,7 @@ const HeroSlider: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh]">
+    <div className="relative  w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh]">
       <div className="w-full h-full absolute top-0 left-0 overflow-hidden">
         <img
           src={images[currentIndex]}
