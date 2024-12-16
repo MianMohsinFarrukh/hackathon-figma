@@ -172,7 +172,7 @@ const Navbar: React.FC = () => {
       isDropdown: true,
       subLinks: [
         { name: "About Us", link: "/pages/aboutus" },
-        { name: "Page 2", link: "/pages/page2" },
+        { name: "Hekto Demo", link: "/pages/hektodemo" },
       ],
     },
     {
@@ -180,8 +180,8 @@ const Navbar: React.FC = () => {
       link: "/pages/products",
       isDropdown: true,
       subLinks: [
-        { name: "Product 1", link: "/pages/products/product1" },
-        { name: "Product 2", link: "/pages/products/product2" },
+        { name: "Products", link: "/pages/products" },
+        { name: "Grid", link: "/pages/grid" },
       ],
     },
     {
@@ -198,8 +198,9 @@ const Navbar: React.FC = () => {
       link: "/shop",
       isDropdown: true,
       subLinks: [
-        { name: "Shop Item 1", link: "/shop/item1" },
-        { name: "Shop Item 2", link: "/shop/item2" },
+        { name: "Shoplist", link: "/pages/wishlist-shoplist" },
+        { name: "Shop leftside", link: "/pages/shopleftside" },
+        { name: "Shopping Card", link: "/pages/shopingcard" },
       ],
     },
     {

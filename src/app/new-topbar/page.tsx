@@ -51,13 +51,13 @@ const TopBar: React.FC = () => {
           </option>
         </select>
         <span className="text-sm flex items-center cursor-pointer hover:text-gray-300 mt-2 sm:mt-0">
-         <Link href="/pages/loginpage">Login</Link>  <AiOutlineUser className="ml-1" />
+          <Link href="/pages/loginpage">Login</Link>  <AiOutlineUser className="ml-1" />
         </span>
         <span className="text-sm flex items-center cursor-pointer hover:text-gray-300 mt-2 sm:mt-0">
-        <Link href="/pages/wishlist-shoplist">Wishlist</Link>  <IoHeartOutline className="ml-1" />
+          <Link href="/pages/wishlist-shoplist">Wishlist</Link>  <IoHeartOutline className="ml-1" />
         </span>
         <span className="text-xl cursor-pointer hover:bg-purple-900 p-1 rounded-full mt-2 sm:mt-0">
-          <MdOutlineShoppingCart />
+          <Link href="/pages/ordercomplete"><MdOutlineShoppingCart /></Link>
         </span>
       </div>
     </div>

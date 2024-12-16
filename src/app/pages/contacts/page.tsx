@@ -1,3 +1,4 @@
+"use client";
 import Herotopbar from '@/app/components/hero-top-bar/page'
 import React from 'react'
 
