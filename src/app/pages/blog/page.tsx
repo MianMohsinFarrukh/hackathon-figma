@@ -6,15 +6,15 @@ import { FaFacebookF, FaTwitter } from 'react-icons/fa'
 import { FaSquareInstagram } from 'react-icons/fa6'
 import { RiCalendarTodoFill } from 'react-icons/ri'
 
-export default function Singleblog() {
+export default function Blog() {
     return (
         <div>
             <div><Herotopbar
-                title="Single Blog"
+                title="Blog"
                 breadcrumbs={[
                     { name: "Home", path: "/" },
                     { name: "Pages", path: "/pages" },
-                    { name: "Single Blog", active: true },
+                    { name: "Blog", active: true },
                 ]}
                 titleStyle="text-purple-900 "
                 breadcrumbStyle="text-gray-500"
