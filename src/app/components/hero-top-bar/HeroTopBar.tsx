@@ -1,18 +1,19 @@
-import React from 'react';
+// src/components/hero-top-bar/HeroTopBar.tsx
+import React from "react";
 
 interface HeroTopbarProps {
-  title: string; // The main title text
-  breadcrumbs: { name: string; path?: string; active?: boolean }[]; // Breadcrumb items
-  titleStyle?: string; // Optional custom styles for the title
-  breadcrumbStyle?: string; // Optional custom styles for the breadcrumbs
+  title: string;
+  breadcrumbs: { name: string; path?: string; active?: boolean }[];
+  titleStyle?: string;
+  breadcrumbStyle?: string;
 }
 
-export default function Herotopbar({
+const HeroTopBar: React.FC<HeroTopbarProps> = ({
   title,
   breadcrumbs,
-  titleStyle = "text-gray-800", // Default title styles
-  breadcrumbStyle = "text-gray-400", // Default breadcrumb styles
-}: HeroTopbarProps) {
+  titleStyle = "text-gray-800",
+  breadcrumbStyle = "text-gray-400",
+}) => {
   return (
     <div className="bg-purple-100 py-8">
       <div className="container mx-auto text-center md:text-left mb-12 mt-3 px-4 md:px-14">
@@ -43,4 +44,6 @@ export default function Herotopbar({
       </div>
     </div>
   );
-}
+};
+
+export default HeroTopBar;

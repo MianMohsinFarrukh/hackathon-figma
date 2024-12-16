@@ -1,6 +1,6 @@
 "use client";
 import Sectionfour from '@/app/components/hero-s4/page'
-import Herotopbar from '@/app/components/hero-top-bar/page'
+import Herotopbar from '@/app/components/hero-top-bar/HeroTopBar'
 import React from 'react'
 import Image from 'next/image';
 export default function Aboutus() {

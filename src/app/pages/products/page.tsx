@@ -1,5 +1,5 @@
 "use client";
-import Herotopbar from '@/app/components/hero-top-bar/page'
+import Herotopbar from '@/app/components/hero-top-bar/HeroTopBar'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import Image from 'next/image';

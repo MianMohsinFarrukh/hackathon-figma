@@ -1,4 +1,4 @@
-import Herotopbar from '@/app/components/hero-top-bar/page'
+import Herotopbar from '@/app/components/hero-top-bar/HeroTopBar'
 import React from 'react'
 import Endimg from '@/app/components/endimg/page'
 export default function loginpage() {

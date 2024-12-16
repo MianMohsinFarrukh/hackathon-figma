@@ -1,5 +1,5 @@
 "use client";
-import Herotopbar from "@/app/components/hero-top-bar/page";
+import Herotopbar from "@/app/components/hero-top-bar/HeroTopBar";
 import React from "react";
 
 const Checkout: React.FC = () => {

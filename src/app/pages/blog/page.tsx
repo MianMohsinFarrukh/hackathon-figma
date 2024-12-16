@@ -1,6 +1,6 @@
 "use client";
 import Endimg from '@/app/components/endimg/page'
-import Herotopbar from '@/app/components/hero-top-bar/page'
+import Herotopbar from '@/app/components/hero-top-bar/HeroTopBar'
 import React from 'react'
 import { BiSolidPen } from 'react-icons/bi'
 import { FaFacebookF, FaTwitter } from 'react-icons/fa'

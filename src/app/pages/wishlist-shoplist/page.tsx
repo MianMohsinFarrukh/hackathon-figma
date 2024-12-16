@@ -1,4 +1,4 @@
-import Herotopbar from "@/app/components/hero-top-bar/page";
+import Herotopbar from "@/app/components/hero-top-bar/HeroTopBar";
 import React from "react";
 import { CiHeart, CiZoomIn } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
