@@ -36,10 +36,12 @@ export default function Shopingcard() {
                                     <tr key={index} className="border-t">
                                         <td className="flex items-center py-3">
                                             <img
-                                                src={`/imges/b1-${index + 1}.png`}
+                                                src={`/imges/f1-${index + 1}.png`}
                                                 alt="product"
                                                 className="w-20 h-20 mr-3 rounded"
                                             />
+
+
                                             <div>
                                                 <p className="text-sm md:text-base font-semibold">Product Name</p>
                                                 <p className="text-xs md:text-sm text-gray-500">Color: Brown</p>
