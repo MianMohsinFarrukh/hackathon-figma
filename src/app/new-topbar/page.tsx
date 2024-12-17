@@ -9,21 +9,21 @@ const TopBar: React.FC = () => {
   return (
     <div className="bg-purple-600 text-white px-4 py-2 flex flex-wrap items-center justify-between">
       {/* Left Section */}
-      <div className="flex items-center space-x-6 flex-wrap sm:flex-nowrap ml-6">
-        <div className="flex items-center space-x-2">
+      <div className="flex flex-wrap items-center justify-center sm:justify-start space-x-6 mb-2 sm:mb-0 w-full sm:w-auto">
+        <div className="flex items-center space-x-2 mt-2 sm:mt-0">
           <FaEnvelope className="text-lg" />
           <span className="text-sm">mhhasanul@gmail.com</span>
         </div>
-        <div className="flex items-center space-x-2">
-          <FaPhoneAlt className="text-lg" />
+        <div className="flex items-center space-x-2 mt-2 sm:mt-0">
+          <FaPhoneAlt className="text-md" />
           <span className="text-sm">(12345) 67890</span>
         </div>
       </div>
 
       {/* Right Section */}
-      <div className="flex flex-wrap items-center space-x-4 mt-2 md:mt-0 justify-center sm:justify-start w-full sm:w-auto">
+      <div className="flex flex-wrap items-center justify-center sm:justify-start space-x-4 w-full sm:w-auto">
         <select
-          className="bg-transparent text-white text-sm outline-none hover:bg-purple-700 px-2 py-1 rounded-md mt-2 sm:mt-0"
+          className="bg-transparent text-white text-sm outline-none hover:bg-purple-700 px-2 py-1 rounded-md"
           aria-label="Select language"
         >
           <option value="en" className="text-black">
@@ -51,13 +51,17 @@ const TopBar: React.FC = () => {
           </option>
         </select>
         <span className="text-sm flex items-center cursor-pointer hover:text-gray-300 mt-2 sm:mt-0">
-          <Link href="/pages/loginpage">Login</Link>  <AiOutlineUser className="ml-1" />
+          <Link href="/pages/loginpage">Login</Link>
+          <AiOutlineUser className="ml-1" />
         </span>
         <span className="text-sm flex items-center cursor-pointer hover:text-gray-300 mt-2 sm:mt-0">
-          <Link href="/pages/wishlist-shoplist">Wishlist</Link>  <IoHeartOutline className="ml-1" />
+          <Link href="/pages/wishlist-shoplist">Wishlist</Link>
+          <IoHeartOutline className="ml-1" />
         </span>
         <span className="text-xl cursor-pointer hover:bg-purple-900 p-1 rounded-full mt-2 sm:mt-0">
-          <Link href="/pages/ordercomplete"><MdOutlineShoppingCart /></Link>
+          <Link href="/pages/ordercomplete">
+            <MdOutlineShoppingCart />
+          </Link>
         </span>
       </div>
     </div>
