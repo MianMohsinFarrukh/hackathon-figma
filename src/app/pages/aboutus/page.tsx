@@ -3,6 +3,7 @@ import Sectionfour from '@/app/components/hero-s4/page'
 import Herotopbar from '@/app/components/hero-top-bar/HeroTopBar'
 import React from 'react'
 import Image from 'next/image';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 export default function Aboutus() {
   return (
     <div>
@@ -48,35 +49,57 @@ export default function Aboutus() {
         <Sectionfour />
       </div>
 
+      <section className="flex items-center justify-center h-auto md:mb-24 mb-14 bg-purple-50 px-2">
+        <div className="max-w-4xl text-center p-10  ">
+          <h2 className="text-2xl md:text-4xl font-bold text-purple-800 mb-6">
+            Our Client Say!
+          </h2>
 
-      <div className='md:w-full  h-auto pb-8 bg-purple-100 mb-28 px-24 text-center items-center'>
-        <div className='pt-8'>
-          <span className='text-lg text-purple-800 font-bold'>Our Client Say!</span>
-          <div className="ml-96 pl-8">
-            <Image className=" mt-4 mb-4 " width={100} height={100} src="/imges/mix.png" alt='image'></Image>
+          {/* Testimonial Avatar & Text */}
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex items-center space-x-4">
+              <img
+                src="/imges/m1.png"
+                alt="Client"
+                className="w-16 h-16  border-2 "
+              />
+              <img
+                src="/imges/m2.png"
+                alt="Client"
+                className="w-16 h-16 mb-6 border-2 "
+              />
+              <img
+                src="/imges/m3.png"
+                alt="Client"
+                className="w-16 h-16  border-2 "
+              />
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-700">
+                Selina Gomez
+              </h3>
+              <p className="text-gray-500 text-sm">Our Valued Client</p>
+            </div>
           </div>
-          <h3 className='text-md text-purple-800 font-bold'>Selina Gomez</h3>
-          <h5 className='text-sm text-black font-bold'>Ceo At Webecy Digital</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis minima itaque eveniet modi, nam, minus, sed sunt quis quia nihil rem fugiat odio provident dolore saepe enim excepturi! Officia!</p>
 
-          <div className='md:ml-56 ml-14 mt-4 flex md:px-52 '>
-            <div className='w-4 p-1 bg-pink-500'></div>
-            <div className='w-4 p-1 ml-3 bg-pink-300'></div>
-            <div className='w-4 p-1 ml-3 bg-pink-300'></div>
+          {/* Quote Section */}
+          <div className="mt-6 text-gray-600">
+            <FaQuoteLeft className="inline-block text-pink-500 text-2xl mr-2" />
+            <p className="inline">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non dui
+              ultricies quam vel odio sollicitudin. Nam vitae a enim nunc, sed
+              sapien egestas ac nunc.
+            </p>
+            <FaQuoteRight className="inline-block text-pink-500 text-2xl ml-2" />
           </div>
 
-
-
-
+          {/* Decoration */}
+          <div className="mt-4">
+            <div className="w-12 h-1 bg-pink-500 mx-auto"></div>
+          </div>
         </div>
-
-      </div>
-
-
-
-
-
-
+      </section>
     </div>
   )
 }
