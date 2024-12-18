@@ -210,6 +210,10 @@ const Navbar: React.FC = () => {
     }
   ];
 
+  function closeAllDropdowns(): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <header className="bg-white text-black">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
@@ -230,7 +234,7 @@ const Navbar: React.FC = () => {
           </button>
         </div>
 
-        {/* Desktop Nav Links */}
+        {/* Desktop Nav Links
         <nav className="hidden md:flex space-x-8">
           {navItems.map((navItem) => (
             <div key={navItem.link} className="relative z-50">
@@ -264,7 +268,73 @@ const Navbar: React.FC = () => {
               )}
             </div>
           ))}
-        </nav>
+        </nav> */}
+
+
+
+
+
+{/* Desktop Nav Links */}
+<nav className="hidden md:flex space-x-8">
+  {navItems.map((navItem) => (
+    <div key={navItem.link} className="relative z-50">
+      {navItem.isDropdown ? (
+        <>
+          <button
+            onClick={() => toggleDropdown(navItem.name)}
+            className="hover:text-pink-500"
+          >
+            {navItem.name}
+            <IoIosArrowDown className="inline-block ml-1" />
+          </button>
+          {dropdownOpen[navItem.name] && (
+            <div className="absolute left-0 mt-2 bg-white shadow-lg w-40">
+              {navItem.subLinks?.map((subLink) => (
+                <Link
+                  key={subLink.link}
+                  href={subLink.link}
+                  className="block px-4 py-2 text-black hover:bg-pink-100"
+                  onClick={() => toggleDropdown(navItem.name)} // Close menu after clicking
+                >
+                  {subLink.name}
+                </Link>
+              ))}
+            </div>
+          )}
+        </>
+      ) : (
+        <Link
+          href={navItem.link}
+          className="hover:text-pink-500"
+          onClick={() => closeAllDropdowns()} // Optional: close all dropdowns when navigating
+        >
+          {navItem.name}
+        </Link>
+      )}
+    </div>
+  ))}
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         {/* Desktop Search Bar */}
         <div className="relative hidden md:flex">
