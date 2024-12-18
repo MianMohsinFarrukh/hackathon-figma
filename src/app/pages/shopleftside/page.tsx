@@ -107,14 +107,14 @@ export default function Shopleftside() {
                 <main className="w-full md:w-3/4 p-6">
                     <div className="space-y-6">
                         {/* Product Card */}
-                        {Array.from({ length: 8 }).map((_, index) => (
+                        {Array.from({ length: 7 }).map((_, index) => (
                             <div
                                 key={index}
                                 className="flex flex-col md:flex-row bg-white rounded-lg border shadow p-4 w-full"
                             >
                                 <div className="w-full md:w-1/3">
                                     <img
-                                        src={`/imges/b1.png`}
+                                        src={`/imges/e1-${index + 1}.png`}
                                         alt={`Product ${index + 1}`}
                                         className="w-full rounded"
                                     />
